@@ -1,0 +1,24 @@
+{
+  "_comment": "bower requires git to be installed, we do not need git as a dependency.",
+  "name": "css-cube",
+  "version": "0.0.0",
+  "dependencies": {
+    "modernizr": "~2.8.3",
+    "bootstrap": "~3.2.0"
+  },
+  "authors": [
+    "Ricardo de pena <ricardo.depena@gmail.com>"
+  ],
+  "description": "css cube demo",
+  "main": "gruntfile.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ]
+}

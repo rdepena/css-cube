@@ -1,0 +1,123 @@
+// bower:scss
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color:#555555;
+  color: #A9A9A9;
+}
+
+/* Start Cube specific styles */
+.stage {
+    display: inline-block;
+    margin-top: 50px;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    float: left;
+
+    -webkit-perspective: 4000px;
+    -moz-perspective: 4000px;
+    -ms-perspective: 4000px;
+    -o-perspective: 4000px;
+    perspective: 4000px;
+
+    -webkit-perspective-origin: 50% 50%;
+    -moz-perspective-origin: 50% 50%;
+    -ms-perspective-origin: 50% 50%;
+    -o-perspective-origin: 50% 50%;
+    perspective-origin: 50% 50%;
+}
+.cube {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    -webkit-transition: -webkit-transform 0.3s linear;
+    -moz-transition: -moz-transform 0.3s linear;
+    -ms-transition: -ms-transform 0.3s linear;
+    -o-transition: -o-transform 0.3s linear;
+    transition: transform 0.3s linear;
+}
+/* Cube Sides  */
+.cube div{
+    position: absolute;
+    top:0;
+    left: 0;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 5px black solid;
+}
+.cube .top {
+    -webkit-transform: rotateX(90deg) translateZ(200px);
+    -moz-transform: rotateX(90deg) translateZ(200px);
+    -ms-transform: rotateX(90deg) translateZ(200px);
+    -o-transform: rotateX(90deg) translateZ(200px);
+    transform: rotateX(90deg) translateZ(200px);
+}
+.cube .bottom {
+    -webkit-transform: rotateX(90deg) translateZ(-200px);
+    -moz-transform: rotateX(90deg) translateZ(-200px);
+    -ms-transform: rotateX(90deg) translateZ(-200px);
+    -o-transform: rotateX(90deg) translateZ(-200px);
+    transform: rotateX(90deg) translateZ(-200px);
+}
+.cube .left {
+    -webkit-transform: rotateY(90deg) translateZ(-200px);
+    -moz-transform: rotateY(90deg) translateZ(-200px);
+    -ms-transform: rotateY(90deg) translateZ(-200px);
+    -o-transform: rotateY(90deg) translateZ(-200px);
+    transform: rotateY(90deg) translateZ(-200px);
+}
+.cube .right {
+    -webkit-transform: rotateY(90deg) translateZ(200px);
+    -moz-transform: rotateY(90deg) translateZ(200px);
+    -ms-transform: rotateY(90deg) translateZ(200px);
+    -o-transform: rotateY(90deg) translateZ(200px);
+    transform: rotateY(90deg) translateZ(200px);
+}
+.cube .front {
+    -webkit-transform: translateZ(200px);
+    -moz-transform: translateZ(200px);
+    -ms-transform: translateZ(200px);
+    -o-transform: translateZ(200px);
+    transform: translateZ(200px);
+}
+.cube .back {
+    -webkit-transform: translateZ(-200px);
+    -moz-transform: translateZ(-200px);
+    -ms-transform: translateZ(-200px);
+    -o-transform: translateZ(-200px);
+    transform: translateZ(-200px);
+}
+/* Cube Colors  */
+.invert .cube div{
+    background-color: black;
+    border: 5px white solid;
+}
+.red .cube div{
+  background-color:rgba(166,0,0,1);
+  border: 5px white solid;
+}
+.green .cube div{
+  background-color:rgba(1,83,103,1);
+  border: 5px rgba(32,102,118,1) solid;
+}
+
+/* End Cube specific styles */
